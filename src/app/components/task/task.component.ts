@@ -12,7 +12,6 @@ import { Task } from '../../models/task.model';
              [defaultChecked]="task?.state === 'TASK_ARCHIVED'"
              disabled="true"
              name="checked"
-             style="background: red;"
            />
            <span class="checkbox-custom" (click)="onArchive(task.id)" attr.aria-label="archiveTask-{{ task?.id }}"></span>
          </label>
